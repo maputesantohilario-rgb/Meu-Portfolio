@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Santò Hilário Mapute — Desenvolvedor Full Stack em Moçambique" />
+  <title>Santò Hilário Mapute | Desenvolvedor Full Stack</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+  <canvas id="bgCanvas" class="bg-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="logo">Santò<span>.</span></div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema"><i class="fa-solid fa-moon"></i></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <div class="hero-badge"><span class="dot"></span> Disponível para projetos</div>
+      <h1>Olá! Eu sou<br><span class="gradient">Santò Hilário Mapute</span></h1>
+      <p class="hero-tagline">"A preguiça é a inimiga da riqueza — por isso eu codifico."</p>
+      <p class="hero-description">
+        Estudante do <strong>3.º ano de Desenvolvimento de Software</strong> na USTM, apaixonado por criar soluções digitais. Experiência em consultoria de electrónicos, vendas online e desenvolvimento full stack.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://wa.me/258856739601" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> Falar Comigo</a>
+        <a href="curriculo.pdf" download class="btn btn-outline"><i class="fa-solid fa-download"></i> CV</a>
+      </div>
+      <div class="social-links">
+        <a href="mailto:maputesantohilario@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/258856739601" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    
+    <div class="hero-image">
+      <div class="photo-wrapper">
+        <div class="photo-glow"></div>
+        <img src="imagens/perfil.jpg?v=3" alt="Santò Hilário Mapute" class="profile-photo" />
+        <div class="photo-ring"></div>
+      </div>
+      <div class="stats-mini">
+        <div class="mini-stat"><strong>20</strong><span>anos</span></div>
+        <div class="mini-stat"><strong>3.º</strong><span>ano</span></div>
+        <div class="mini-stat"><strong>6+</strong><span>linguagens</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint"><span>Scroll</span><div class="mouse"></div></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="section-header reveal">
+      <span class="section-tag">Sobre mim</span>
+      <h2>Quem é <span class="gradient">Santò</span>?</h2>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-card reveal">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>Formação</h3>
+        <p><strong>3.º ano de Desenvolvimento de Software</strong><br>Universidade São Tomás de Moçambique (USTM)</p>
+        <p><strong>Curso de Inglês — Nível 2</strong><br>Magic English School</p>
+      </div>
+      <div class="sobre-card reveal">
+        <i class="fa-solid fa-briefcase"></i>
+        <h3>Experiência</h3>
+        <p><strong>Consultor de Electrónicos</strong><br>Agência de reparação — atendimento ao cliente, diagnóstico e resolução de problemas.</p>
+        <p><strong>Vendas Online</strong><br>Gestão de clientes, comunicação e suporte pós-venda.</p>
+      </div>
+      <div class="sobre-card reveal">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Valores</h3>
+        <p>Dedicação, organização, responsabilidade e facilidade de aprendizagem. Adapto-me a diferentes ambientes e adoro desafios.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-header reveal">
+      <span class="section-tag">Habilidades</span>
+      <h2>As minhas <span class="gradient">ferramentas</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Linguagens</h3>
+        <div class="skill-tags"><span>Java</span><span>PHP</span><span>C#</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Bases de Dados</h3>
+        <div class="skill-tags"><span>MySQL</span><span>SQL</span></div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+        <h3>Ferramentas</h3>
+        <div class="skill-tags"><span>VS Code</span><span>Visual G</span><span>Eclipse</span><span>Git</span></div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Soft Skills</h3>
+        <div class="skill-tags"><span>Atendimento</span><span>Comunicação</span><span>Resolução</span><span>Trabalho em equipa</span></div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-icon"><i class="fa-solid fa-language"></i></div>
+        <h3>Idiomas</h3>
+        <div class="skill-tags"><span>Português 🇲🇿</span><span>Inglês 🇬🇧</span><span>Changana 🇲🇿</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projetos" id="projetos">
+    <div class="section-header reveal">
+      <span class="section-tag">Portfólio</span>
+      <h2>Projetos <span class="gradient">recentes</span></h2>
+    </div>
+    <div class="projects-grid">
+      
+      <!-- PROJETO 1: TONGAS -->
+      <article class="project-card reveal">
+        <div class="project-image">
+          <img src="imagens/tongas-bbq.jpg" alt="Tongas BBQ" />
+          <div class="project-overlay"><span class="project-badge">Restaurante</span></div>
+        </div>
+        <div class="project-content">
+          <h3>Tongas BBQ</h3>
+          <p>Website completo para restaurante de churrasco, com menu digital e sistema de pedidos.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <button class="project-link" data-open="tongas">Ver detalhes <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </article>
+
+      <!-- PROJETO 2: CALCULADORA -->
+      <article class="project-card reveal">
+        <div class="project-image">
+          <img src="imagens/calculadora.jpg" alt="Calculadora Interativa" />
+          <div class="project-overlay"><span class="project-badge">Utilitário</span></div>
+        </div>
+        <div class="project-content">
+          <h3>Calculadora Interativa</h3>
+          <p>Calculadora funcional com operações matemáticas básicas, histórico e design responsivo.</p>
+          <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+          <button class="project-link" data-open="calculadora">Ver detalhes <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </article>
+
+      <!-- PROJETO 3: GESTOR DE TAREFAS -->
+      <article class="project-card reveal">
+        <div class="project-image">
+          <img src="imagens/tarefas.jpg" alt="Gestor de Tarefas" />
+          <div class="project-overlay"><span class="project-badge">Produtividade</span></div>
+        </div>
+        <div class="project-content">
+          <h3>Gestor de Tarefas</h3>
+          <p>Aplicação para organizar o dia a dia, com criação, edição e conclusão de tarefas.</p>
+          <div class="project-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+          <button class="project-link" data-open="tarefas">Ver detalhes <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="section-header reveal">
+      <span class="section-tag">Contacto</span>
+      <h2>Vamos <span class="gradient">conversar</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Estou disponível para:</h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Estágio em TI</li>
+          <li><i class="fa-solid fa-check"></i> Projetos freelance</li>
+          <li><i class="fa-solid fa-check"></i> Consultoria técnica</li>
+          <li><i class="fa-solid fa-check"></i> Colaborações open source</li>
+        </ul>
+        <div class="contact-items">
+          <a href="mailto:maputesantohilario@gmail.com" class="contact-item"><i class="fa-solid fa-envelope"></i><span>maputesantohilario@gmail.com</span></a>
+          <a href="https://wa.me/258856739601" target="_blank" class="contact-item"><i class="fa-brands fa-whatsapp"></i><span>856 739 601 / 87 051 9570</span></a>
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>Maputo — Polana Caniço A</span></div>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-group"><label for="nome">Nome</label><input type="text" id="nome" name="nome" placeholder="Seu nome" required /></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="seu@email.com" required /></div>
+        <div class="form-group"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem..." required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-full"><i class="fa-solid fa-paper-plane"></i> Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="toast" id="toast"><i class="fa-solid fa-check-circle"></i><span id="toastMessage">Mensagem enviada!</span></div>
+
+  <footer class="footer">
+    <p>&copy; <span class="year">2025</span> Santò Hilário Mapute — Feito com <i class="fa-solid fa-heart"></i> em Moçambique 🇲🇿</p>
+    <p class="footer-small">Código limpo. Design bonito. Resultados reais.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
